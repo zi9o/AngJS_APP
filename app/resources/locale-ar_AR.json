@@ -1,0 +1,13 @@
+{
+  "PAGE_TITLE": "Smugu",
+  "PAGE_CONTENT": "How to translate your AngularJS applications without page reload with angular-translate",
+
+  "views.index.Home": "الرئيسية",
+  "views.index.Web App": "تطبيق الويب",
+  "views.index.Language": "اللغة",
+  "views.index.Slogan": "!أفضل المقالات، مقروئة بأصوات رائعة لمحترفين",
+  "views.index.Copyright": "جميع الحقوق محفوظة - 2015",
+  "views.index.Team text": "فريق سموگو حريص على إرضاء زبنائه و تطوير خدماته و تجربة الزبناء.سموگو ليست مجرد فريق بل هي عائلة.",
+  "views.index.Team": "مطور من طرف فريق من المحترفين"
+
+}

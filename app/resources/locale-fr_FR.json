@@ -1,0 +1,12 @@
+{
+  "PAGE_TITLE": "Smugu",
+  "PAGE_CONTENT": "Как переводить ваши AngularJS приложения без перезагрузки страницы с angular-translate",
+
+  "views.index.Home": "Accueil",
+  "views.index.Web App": "Application Web",
+  "views.index.Language": "Langue",
+  "views.index.Slogan": "Les meilleurs articles, lus par de merveilleuses voix de professionels!",
+  "views.index.Copyright": "Copyright 2015 - Smugu",
+  "views.index.Team text": "L'équipe Smugu veille sur la satisfaction des clients, et l'amélioration de ses services, ainsi que l'expérience client.Smugu n'est pas seulement une équipe, c'est une famille.",
+  "views.index.Team": "Créé par une équipe de professionels."
+}

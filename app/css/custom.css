@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "Palatino Sans";
+    src: url(../fonts/Palatino_Sans_Arabic-Bold.ttf) format("truetype");
+}
+p.customfont {
+    font-family: "Palatino Sans", Verdana, Tahoma;
+}

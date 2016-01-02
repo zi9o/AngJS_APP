@@ -1,0 +1,265 @@
+<!doctype html>
+<html class="no-js app-loading" ng-app="translateApp">
+<head>
+  <meta charset="utf-8">
+  <title ng-bind="pageTitle">Smugu</title>
+  <meta name="description" ng-attr-content="{{pageContent}}" content="How to translate your AngularJS applications without page reload with angular-translate">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/github-fork-ribbon-css/gh-fork-ribbon.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <!-- <link rel="stylesheet" href="styles/main.css"> -->
+  <!-- endbuild -->
+</head>
+<body ng-controller="AppCtrl">
+
+  <!-- Add your site or application content here -->
+  <div class="nav-container">
+    <a id="top"></a>
+    <nav class="absolute transparent">
+      <div class="nav-bar">
+        <div class="module left">
+          <a href="index.html">
+            <img class="logo logo-light" alt="Foundry" src="img/logo-light.png" />
+            <img class="logo logo-dark" alt="Foundry" src="img/logo-dark.png" />
+          </a>
+        </div>
+        <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+          <i class="ti-menu"></i>
+        </div>
+        <div class="module-group right">
+          <div class="module left">
+            <ul class="menu">
+              <li>
+                <a href="#">
+                  <p class="customfont">{{"views.index.Home" | translate}}</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--end of menu module-->
+          <div class="module widget-handle language left">
+            <ul class="menu">
+              <li>
+                <a href="#">
+                <p class="customfont">{{"views.index.Web App" | translate}}</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div ng-translate-language-select></div>
+          <!-- <div class="module widget-handle language left">
+            <ul class="menu">
+              <li class="has-dropdown">
+                <a href="#">ENG</a>
+                <ul>
+                  <li>
+                    <a href="#">French</a>
+                  </li>
+                  <li>
+                    <a href="#">Deutsch</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        <!--end of module group-->
+      </div>
+    </nav>
+  </div>
+  <div class="main-container">
+    <section class="image-bg fullscreen overlay bg-dark">
+      <div class="background-image-holder">
+        <img alt="Background Image" class="background-image" src="https://unsplash.imgix.net/photo-1425321395722-b1dd54a97cf3?q=75&fm=jpg&w=1080&fit=max&s=9e4ce3e023621d6f94259eea8fa3b856">
+      </div>
+      <div class="fs-vid-background">
+        <video autoplay muted loop>
+          <source src="video/smugu_bg.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="container v-align-transform">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+
+
+              <h2 class="large">
+                <img src="img/logo-light.png" />
+                <br/> <p class="customfont">{{"views.index.Slogan" | translate}}</p>
+              </h2>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+      <section class="image-edge pb0">
+        <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
+          <img alt="Screenshot" class="mb-xs-24" src="img/phone2.png" />
+        </div>
+        <div class="container">
+          <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
+            <h1 class="large mb64 mb-xs-24">Ravissant, Beau, Flexible, Amusant.</h1>
+            <div class="feature feature-3">
+              <div class="left">
+                <i class="ti-gallery icon-sm"></i>
+              </div>
+              <div class="right">
+                <h5 class="uppercase mb16">Expérience utilisateur</h5>
+                <p>
+                  Crée par des utilisateurs, pour des utilisateurs. Essayer Smugu aujoud'hui.
+                </p>
+              </div>
+            </div>
+            <!--end of feature-->
+            <div class="feature feature-3">
+              <div class="left">
+                <i class="ti-layers icon-sm"></i>
+              </div>
+              <div class="right">
+                <h5 class="uppercase mb16">Design Fascinant</h5>
+                <p>
+                  L'expérience utilisateur est un facteur important de la réussite de smugu.
+                </p>
+              </div>
+            </div>
+            <!--end of feature-->
+          </div>
+        </div>
+        <!--end of container-->
+      </section>
+      <section class="image-edge">
+        <div class="col-md-6 col-sm-4 p0">
+          <img alt="Screenshot" class="mb-xs-24" src="img/home-2-1.png" />
+        </div>
+        <div class="container">
+          <div class="col-md-5 col-md-offset-1 col-sm-7 col-sm-offset-1 v-align-transform right">
+            <h2>Service plus
+              <br /> performant que jamais</h2>
+              <p>
+                Essayer Smugu, vous aller l'adorer comme tout le monde l'adore!
+              </p>
+              <a class="btn btn-lg" href="#">Essayer Smugu</a>
+            </div>
+          </div>
+          <!--end of container-->
+        </section>
+        <section class="bg-secondary">
+          <div class="container">
+            <div class="row mb64 mb-xs-24">
+              <div class="col-sm-12 text-center spread-children-large">
+                <img alt="Pic" src="img/avatar1.png" />
+                <img alt="Pic" src="img/avatar2.png" />
+                <img alt="Pic" src="img/avatar3.png" />
+                <img alt="Pic" src="img/avatar4.png" />
+              </div>
+            </div>
+            <!--end of row-->
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                <h2 class="customfont">{{"views.index.Team" | translate}}</h2>
+                <p class="mb40 mb-xs-24 customfont">
+                  {{"views.index.Team text" | translate}}
+                </p>
+              </div>
+            </div>
+            <!--end of row-->
+          </div>
+          <!--end of container-->
+        </section>
+
+        <footer class="footer-1 bg-dark">
+          <div class="container">
+            <!--end of row-->
+            <div class="row">
+              <div class="col-sm-6">
+                <span class="sub">&copy; {{"views.index.Copyright" | translate}}</span>
+              </div>
+              <div class="col-sm-6 text-right">
+                <ul class="list-inline social-list">
+                  <li>
+                    <a href="https://twitter.com/smuguapp">
+                      <i class="ti-twitter-alt"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/smuguapp">
+                      <i class="ti-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-dribbble"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-vimeo-alt"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--end of container-->
+          <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
+        </footer>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/flickr.js"></script>
+      <script src="js/lightbox.min.js"></script>
+      <script src="js/masonry.min.js"></script>
+      <script src="js/twitterfetcher.min.js"></script>
+      <script src="js/spectragram.min.js"></script>
+      <script src="js/ytplayer.min.js"></script>
+      <script src="js/countdown.min.js"></script>
+      <script src="js/parallax.js"></script>
+      <script src="js/flexslider.min.js"></script>
+      <script src="js/smooth-scroll.min.js"></script>
+      <script src="js/scripts.js"></script>
+
+      <!-- build:js(.) scripts/vendor.js -->
+      <!-- bower:js -->
+      <!-- <script src="bower_components/jquery/dist/jquery.js"></script> -->
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+      <script src="bower_components/angular-animate/angular-animate.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-route/angular-route.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/angular-touch/angular-touch.js"></script>
+      <script src="bower_components/angular-translate/angular-translate.js"></script>
+      <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+      <script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+      <script src="bower_components/angular-translate-storage-local/angular-translate-storage-local.js"></script>
+      <script src="bower_components/angular-translate-handler-log/angular-translate-handler-log.js"></script>
+      <script src="bower_components/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
+      <!-- endbower -->
+      <!-- endbuild -->
+
+      <!-- build:js({.tmp,app}) scripts/scripts.js -->
+      <script src="scripts/app.js"></script>
+      <script src="scripts/controllers/appCtrl.js"></script>
+      <script src="scripts/controllers/main.js"></script>
+      <script src="scripts/controllers/about.js"></script>
+      <script src="scripts/controllers/contacts.js"></script>
+      <script src="scripts/services/LocaleService.js"></script>
+      <script src="scripts/directives/LanguageSelectDirective.js"></script>
+      <!-- endbuild -->
+    </body>
+    </html>
